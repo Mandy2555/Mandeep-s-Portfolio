@@ -55,6 +55,15 @@ body {
     letter-spacing: -0.5px;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -562,20 +571,43 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .navbar .container {
-        flex-direction: column;
         padding: 0.8rem 20px;
     }
 
-    .logo {
-        margin-bottom: 0.5rem;
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 250px;
+        height: calc(100vh - 60px);
+        background: var(--white);
+        flex-direction: column;
+        padding: 2rem 0;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        z-index: 999;
+        gap: 0;
     }
 
-    .nav-links {
-        gap: 0.8rem;
-        font-size: 0.85rem;
-        flex-wrap: wrap;
-        justify-content: center;
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 1rem;
     }
 
     .hero {
