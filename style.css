@@ -562,17 +562,57 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        padding: 0.8rem 20px;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
     .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
+        gap: 0.8rem;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 120px 0 80px;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        font-size: 0.9rem;
+    }
+
+    .skills h3 {
+        font-size: 1.1rem;
+    }
+
+    .tag {
+        padding: 8px 16px;
+        font-size: 0.85rem;
     }
 
     .timeline-item {
@@ -584,7 +624,56 @@ footer {
         display: none;
     }
 
+    .timeline-date {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .edu-header h3 {
+        font-size: 1rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
