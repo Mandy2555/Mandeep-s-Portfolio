@@ -26,8 +26,9 @@ async function fetchGitHubProjects() {
             return;
         }
 
-        // Filter out forked repos and categorize
-        const originalRepos = repos.filter(repo => !repo.fork);
+        // Filter out forked repos and unwanted repos
+        const hiddenRepos = ['mandysiwach', 'c-', 'c-plus', 'real-estate-project', 'java', 'java-basic-programs', 'java-assignment-2', 'java-assignment-3', 'java-assignment-4', 'hotel-management-', 'codinga-ninja-java', 'scheduler-spring-boot-', 'crud-application', 'mongodbdatatopdf', 'web-page', 'hotel-web', 'airline'];
+        const originalRepos = repos.filter(repo => !repo.fork && !hiddenRepos.includes(repo.name.toLowerCase()));
         
         const categorized = originalRepos.map(repo => {
             const name = repo.name.toLowerCase();
@@ -125,4 +126,24 @@ window.addEventListener('scroll', () => {
 // Load projects when page loads
 document.addEventListener('DOMContentLoaded', () => {
     fetchGitHubProjects();
+
+    // Project filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.featured-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.dataset.category.includes(filter)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
 });

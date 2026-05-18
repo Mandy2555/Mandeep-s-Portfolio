@@ -1,0 +1,81 @@
+--- PAGE 1 ---
+MANDEEP SIWACH
+ Data Engineer  |  ETL & Pipeline Development  |  GCP  |  SQL & Python
+ mandeepsiwach05@gmail.com  ·  +91 9992662555  ·  Portfolio  ·  LinkedIn
+ 
+PROFESSIONAL SUMMARY
+Data Engineer with hands-on experience building end-to-end data pipelines, production-grade tracking portals, and SAP-integrated
+automation systems. Proficient in Python, SQL, PostgreSQL, ETL workflows, and Power BI. Currently expanding expertise in GCP
+(BigQuery, Dataflow, Pub/Sub) and preparing for the GCP Professional Data Engineer certification. Strong background in process
+automation, data quality enforcement, and supply-chain analytics.
+SKILLS
+Languages
+Python, SQL, Java
+Databases
+PostgreSQL, MySQL, BigQuery
+ETL & Pipelines
+Apache Spark, Apache Airflow, Dataflow, Pub/Sub
+Cloud (GCP)
+BigQuery, Cloud Run, Cloud Storage, Dataproc, Pub/Sub
+BI & Viz
+Power BI, Excel, Matplotlib, Seaborn
+Frameworks
+FastAPI, Spring Boot, Pandas, NumPy, Scikit-Learn
+Infra / OS
+Linux VM, Internal Server, Git
+Soft Skills
+Problem-Solving, Attention to Detail, Process Ownership
+WORK EXPERIENCE
+Data & Systems Engineer · VVDN Technologies · Manesar
+Jun 2024 – Present
+ Designed and built an end-to-end project tracking portal covering the full lifecycle (procurement → production → dispatch) with
+mandatory field validation to enforce process compliance and catch errors at source.
+ Deployed and maintained the portal on a Linux-based internal server VM — managed access control, production uptime, and
+server configuration end-to-end without external support.
+ Integrated SAP APIs to auto-validate invoice vs. PO data before dispatch — eliminated mismatches and prevented financial
+discrepancies.
+ Implemented duplicate Purchase Request detection logic to flag cases where multiple PRs were raised for the same PO in SAP,
+reducing redundant procurement entries.
+ Designed stage-wise bottleneck tracking dashboard identifying which production stage and team caused the most delays —
+enabling targeted process improvements.
+ Built auto-checkpoints at every workflow step to enforce data quality and sign-off conditions before progression.
+ Developed QR-code-based Bins Management system — each bin tagged with QR linked to material details for real-time
+inventory tracking.
+ Leveraged AI-assisted development (prompt engineering) to accelerate portal backend delivery and automate complex workflow
+logic.
+ Automated PPC workflows from raw data ingestion to Power BI dashboard, eliminating manual reporting steps.
+ Analysed material, labour, and overhead costs across 50+ projects — improved cost accuracy by 20% and identified Rs.10+
+lakhs in annual savings.
+ Administered PostgreSQL on production Linux VM — schema design, query optimisation, and data integrity for manufacturing
+analytics.
+Data Analyst Intern · Essart India Pvt. Ltd. · Delhi NCR
+Sept 2024 – Dec 2024
+ Optimised SQL queries (JOINs, window functions, subqueries) to extract and analyse grievance data.
+ Designed interactive Power BI dashboards for grievance trends, resolution times, and department performance.
+ Used Python (Pandas) for data cleaning, transformation, and analysis to uncover key business insights.
+ Re-engineered service processes across 10 departments — restructured communication flow and cut paperwork by 75%.
+Software Development Intern · Spring Boot / Java · VVDN Technologies ·
+Gurugram
+Mar 2024 – Jul 2024
+ Built RESTful APIs using Spring Boot (Java) following MVC architecture and REST best practices.
+ Developed an Email Scheduler module — cron-based scheduling, SMTP integration, and dynamic template rendering.
+ Implemented full CRUD operations for user management and task tracking using Spring Data JPA + MySQL.
+ Conducted API testing in Postman and documented API contracts.
+
+--- PAGE 2 ---
+PROJECTS
+Marketing Analysis for E-Commerce  ·  Python · Pandas · Seaborn · RFM    Feb 2025
+ Performed RFM customer segmentation to enable targeted marketing strategies.
+ Evaluated campaign KPIs to optimise marketing spend and support data-driven decisions.
+Credit Consumption Prediction — Leading Bank  ·  Python · ML · EDA    May 2025
+ Built ML regression models to predict credit card consumption over 3 months using 40+ engineered features.
+ Validated models (Linear Regression, Decision Trees) optimised on RMSPE metric.
+EDUCATION
+Bachelor of Computer Science | GPA: 7.2 · Maharshi Dayanand University ·
+Rohtak
+Jun 2020 – Aug 2024
+Coursework: DBMS, Java, Python, Machine Learning
+CERTIFICATIONS
+ Advanced Data Science Bootcamp · Analytix Labs, Gurgaon · May 2025
+ Zomato Data Analysis Using Python · WSCUBE Tech · Oct 2024
+ GCP Professional Data Engineer · In Progress · 2025–2026
