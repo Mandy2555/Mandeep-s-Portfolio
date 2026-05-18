@@ -226,7 +226,7 @@ body {
     transition: all 0.3s ease;
 }
 
-..btn-secondary:hover {
+.btn-secondary:hover {
     background: rgba(255,255,255,0.15);
     color: var(--white);
     transform: translateY(-2px);
@@ -771,6 +771,10 @@ footer {
         padding: 0.8rem 20px;
     }
 
+    .logo {
+        font-size: 1.2rem;
+    }
+
     .nav-links {
         position: absolute;
         top: 100%;
@@ -800,125 +804,198 @@ footer {
 
     .nav-links a {
         display: block;
-        font-size: 0.95rem;
-        padding: 1rem;
+        font-size: 0.9rem;
+        padding: 0.8rem;
     }
 
     .nav-links a::after {
         display: none;
     }
 
+    /* Hero Mobile */
     .hero {
-        padding: 90px 0 50px;
+        padding: 80px 0 40px;
     }
 
     .hero-content {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
-    .hero-right {
+    .hero-left, .hero-right {
         max-width: 100%;
     }
 
     .hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .hero h2 {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+    }
+
+    .skills-inline {
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-chip {
+        padding: 3px 8px;
+        font-size: 0.65rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     .social-links a {
         font-size: 1.2rem;
     }
 
-    .section-title {
-        font-size: 1.5rem;
+    .hero-actions {
+        gap: 0.6rem;
     }
 
-    .about-content {
+    .btn-primary, .btn-secondary {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+    }
+
+    .about-box {
+        padding: 1rem;
+    }
+
+    .about-box h3 {
         font-size: 0.9rem;
     }
 
-    .skills h3 {
-        font-size: 1.1rem;
+    .about-box p {
+        font-size: 0.8rem;
     }
 
-    .tag {
-        padding: 8px 16px;
-        font-size: 0.85rem;
+    /* Section Title Mobile */
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title::after {
+        margin: 1rem auto;
+    }
+
+    /* Experience Mobile */
+    .experience {
+        padding: 40px 0;
     }
 
     .experience-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
-    .timeline-item {
-        flex-direction: column;
-        gap: 0.5rem;
+    .exp-card {
+        padding: 1.2rem;
     }
 
-    .timeline-item::before {
-        display: none;
+    .exp-card h3 {
+        font-size: 0.95rem;
     }
 
-    .timeline-date {
-        min-width: auto;
-        font-size: 0.9rem;
+    .exp-card h4 {
+        font-size: 0.85rem;
     }
 
-    .timeline-content {
-        padding: 1.5rem;
+    .exp-card ul {
+        font-size: 0.8rem;
+        margin-left: 1rem;
     }
 
-    .timeline-content h3 {
-        font-size: 1.05rem;
+    /* Education Mobile */
+    .education {
+        padding: 40px 0;
     }
 
     .education-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
     .education-card {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
 
     .edu-header h3 {
+        font-size: 0.95rem;
+    }
+
+    /* Projects Mobile */
+    .projects {
+        padding: 40px 0;
+    }
+
+    .project-filters {
+        gap: 0.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+    }
+
+    .featured-projects {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .featured-img {
+        height: 150px;
+    }
+
+    .featured-body {
+        padding: 1rem;
+    }
+
+    .featured-body h3 {
         font-size: 1rem;
+    }
+
+    .featured-body p {
+        font-size: 0.8rem;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-    .featured-projects {
-        grid-template-columns: 1fr;
+    .project-header {
+        height: 150px;
     }
 
-    .screenshots-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-filters {
-        gap: 0.5rem;
-    }
-
-    .filter-btn {
-        padding: 8px 16px;
-        font-size: 0.8rem;
+    .project-content {
+        padding: 1rem;
     }
 
     .project-content h3 {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
+    }
+
+    /* Contact Mobile */
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact-content p {
+        font-size: 0.9rem;
     }
 
     .contact-info {
-        font-size: 0.9rem;
+        margin-bottom: 1rem;
     }
 
     .contact-item {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         flex-direction: column;
         text-align: center;
     }
@@ -931,5 +1008,43 @@ footer {
     .contact-btn {
         width: 100%;
         justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 75px 0 35px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero h2 {
+        font-size: 0.75rem;
+    }
+
+    .skill-chip {
+        padding: 2px 6px;
+        font-size: 0.6rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 7px 16px;
+        font-size: 0.75rem;
+    }
+
+    .exp-card ul {
+        font-size: 0.75rem;
+    }
+
+    .featured-img {
+        height: 130px;
     }
 }
